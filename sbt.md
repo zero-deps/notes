@@ -13,11 +13,12 @@ scalacOptions ++= Seq(
 ```
 
 ```sbt
-, scalacOptions ++=
+, scalacOptions ++= {
     CrossVersion.partialVersion(scalaVersion.value) match {
       case Some((2, _)) => Nil
       case _ => Nil
     }
+  }
 ```
 
 ```sbt
