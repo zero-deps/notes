@@ -1,5 +1,12 @@
 # vim
 
+## enable vi mode in sh
+
+```
+set -o vi
+set editing-mode vi
+```
+
 ## select number of lines
 
 `V<N>j` will select N lines down
